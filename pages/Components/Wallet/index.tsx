@@ -16,8 +16,8 @@ import {
 import { clusterApiUrl } from "@solana/web3.js";
 import React, { FC, useCallback, useMemo } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { Notification } from "./Notification";
-import { Navigation } from "./Navigation";
+import { Notification } from "../Notification";
+import { Navigation } from "../Navigation";
 
 export const Wallet: FC = () => {
 	const network = WalletAdapterNetwork.Devnet;
@@ -49,7 +49,6 @@ export const Wallet: FC = () => {
 			),
 		[]
 	);
-
 	return (
 		<ConnectionProvider endpoint={endpoint}>
 			<WalletProvider wallets={wallets} onError={onError} autoConnect>
