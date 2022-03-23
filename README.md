@@ -4,7 +4,7 @@
 #### Reference
 solana labs and documentation
 
-#### Node Version 및 
+#### Node Version
 using node v16.14.0 (npm v8.3.1)
 yarn install v1.22.17
 yarn run dev
